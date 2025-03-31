@@ -1,0 +1,43 @@
+/* When the screen is at most 1220px and below*/
+@media screen and (max-width: 1220px) {
+    .projects-portfolio .main-subject{
+        font-size: 30px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .projects-portfolio .main-subject{
+        font-size: 25px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .projects-portfolio .main-subject{
+        font-size: 20px;
+        color: white;
+    }
+
+    .projects-portfolio .heading{
+        font-size: 14px;
+    }
+
+    .projects-portfolio p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .projects-portfolio{
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* exact equal width */
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .projects-portfolio{
+        margin-left: 15%;
+        margin-right: 15%;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); /* exact equal width */
+    }
+}

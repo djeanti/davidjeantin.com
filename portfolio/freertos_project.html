@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/fonts/fonts.css">
+        <link rel="stylesheet" href="../css/project-template.css"> 
+        <link rel="stylesheet" href="../css/responsive-design/mediaqueries-project-template.css"> <!-- Load this in the last -->
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+        <title>David Jeantin</title>
+    </head>
+<body>
+    <section class="main-section">
+        <div class="buttons">
+            <a href="android_project.html" class="button-next">
+                <ion-icon name="chevron-back"></ion-icon>
+            </a>
+            <a href="../portfolio.html" class="button-back">
+                <ion-icon name="close"></ion-icon>
+            </a>
+        </div>
+        <div class="main-title-h1">FreeRTOS project</div>
+        <div class="content">
+            <div class="left-content">
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="../images/FREERTOS_PROJECT/Slide1.png" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="../images/FREERTOS_PROJECT/Slide2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="../images/FREERTOS_PROJECT/Slide3.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="../images/FREERTOS_PROJECT/Slide4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="../images/FREERTOS_PROJECT/Slide5.png" style="width:100%">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <div class="text-left-content">
+                    Development of a remote communicating temperature indicator using <span>FreeRTOS</span>.
+                    The indicator, built around an <span>ESP32</span>, has an OLED display, an asynchronous serial link and an interface with a <span>CAN</span> bus. This CAN bus has been used to link with a temperature sensor module.
+                    The temperature sensor module consists of an <span>LM75B</span> sensor located on an <span>LPC1768</span> mbed expansion board.
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="small-section">Description</div>
+                <div class="status">
+                    <ion-icon name="checkmark"></ion-icon>
+                    <div class="h1">Project finished</div>
+                </div>
+                <div class="lenght">
+                    <ion-icon name="calendar"></ion-icon>
+                    <div class="h1">1 month (2021)</div>
+                </div>
+                <div class="team">
+                    <ion-icon name="people"></ion-icon>
+                    <div class="h1">Team of 2 people</div>
+                </div>
+
+                <div class="small-section">Technologies</div>
+                <div class="tech">
+                    <div class="tech-item">FreeRTOS</div>
+                    <div class="tech-item">C</div>
+                    <div class="tech-item">Arduino IDE</div>
+                    <div class="tech-item">ESP32</div>
+                    <div class="tech-item">LM75B</div>
+                    <div class="tech-item">LPC1768</div>
+                </div>
+
+                <div class="small-section">Share</div>
+                <div class="share">
+                    <a id="fb_sharing_link" class="share-item"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a id="twitter_sharing_link" class="share-item"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a id="linkedin_sharing_link" class="share-item"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../js/slideAnimation.js"></script>
+    <script type="text/javascript" src="../js/sharing.js"></script>
+</body>
+</html>

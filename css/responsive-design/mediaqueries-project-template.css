@@ -1,0 +1,17 @@
+/* When the screen is at most 1080px and below*/
+@media screen and (max-width: 1080px) {
+    .right-content{
+        display: none;
+    }
+
+    .numbertext {
+        top: 85%;
+      }
+}
+
+@media screen and (max-width: 760px) {
+    .main-section{
+        margin-left: 5%;
+        margin-right: 0%;
+    }
+}

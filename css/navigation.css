@@ -1,0 +1,215 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   
+html{
+    height: 100%;
+}
+
+body {
+    font-family: Open-Sans;
+    background-color: #202020;
+    color: white;
+    height: 100%;
+    position: relative;
+}
+
+.font-SemiBold{
+    font-family: Open-Sans-SemiBold;
+}
+
+/* NAVIGATION */
+
+nav a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+    
+li {
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 1%;
+}
+
+nav .hamburger{
+    display: none;
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+
+nav .hamburger:hover{
+    cursor: pointer;
+}
+
+.title-logo{
+    width: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .title-logo *:nth-child(1){
+        width: 45px;
+    }
+
+    .title-logo *:nth-child(2){
+        font-size: 20px;
+    }
+
+/* To position the menu on the most right (nav-rel and nav-abs) */
+.nav-rel{
+    flex: 1;
+    position: relative;
+}
+
+.nav-abs{
+    width: 550px;
+    position: absolute; right:0; transform: translateY(-50%);
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links a{
+    color: #888888;
+    font-family: Open-Sans;
+    font-size: 20px;
+}
+
+/* MENU FOR BROWSER */
+
+.dropdown-title.about a{
+    color: white;
+}
+
+    .dropdown-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dropdown ion-icon{
+        color: #888888;
+        font-size: 16px;
+        margin-left: 3px;
+        margin-top: 4px;
+    }
+
+    .dropdown_menu-padding li{
+        color: #888888;
+        margin-top: 10px;
+    }
+
+    .dropdown_menu-padding li a{
+        font-size: 15px;
+        font-family: Open-Sans;
+    }
+
+    .dropdown_menu-padding li:nth-child(1){
+        margin: 0;
+    }
+    
+    .dropdown_menu-padding a:hover{
+        color: white;
+    }
+
+.dropdown_menu{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: auto;
+    perspective: 1000px;
+    display: none;
+    padding-top: 35px;
+    background-color: none;
+}
+
+.dropdown_menu-padding{
+    background-color: #333333;
+    padding: 12px 22px;
+    border-radius: 10px;
+}
+
+.dropdown_menu.projects{
+    left: 290px;
+}
+
+/* To keep seeing the dropdown menu once the cursor stops hovering the title */
+.dropdown-title:hover ~ .dropdown_menu, .dropdown_menu:hover{
+    display: block;
+}
+
+/* Showing the animation */
+.dropdown_menu-animation{
+    animation: growDown 500ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+/* The animation */
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+/* MENU FOR PHONES */
+
+.nav-abs-phone{
+    display: none;
+    width: 320px;
+    height: 100%;
+    position: absolute; top: 50px; right:0;
+    padding-left: 40px;
+    padding-top: 20px;
+    background-color: #202020;
+}
+
+.nav-links-phone{
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links-phone ul{
+    list-style: inside;
+    padding-left: 20px;
+}
+
+.nav-links-phone .item-phone-li, .nav-links-phone li{
+    padding-top: 20px;
+}
+
+
+/*This below is to allow us to click on Portfolio*/
+.dropdown-title.portfolio a{
+    cursor: pointer;
+    z-index: 1;
+}
+
+.dropdown-title.about a{
+    cursor: pointer;
+    z-index: 1;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+        <title>Hidden</title>
+        <style>
+            html, body{
+                width: 100%; height: 100%;
+            }
+
+            *{
+                padding:0; margin: 0;
+            }
+
+            .mainContent{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 700px;
+                height: 50px;
+                margin-left: -350px;
+                /* -1/2 width */
+                margin-top: -25px;
+                /* -1/2 height */
+                display: flex;
+            }
+
+            button{
+                flex: 1;
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: rgb(44, 144, 190);
+            }
+
+            .display{
+                flex: 1;
+                margin-left: 40px;
+                border: 3px solid rgb(203, 207, 207);
+                background-color: rgb(141, 229, 232);
+                color: red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+<body>
+    <section class="mainContent">
+        <button onclick="popUp()">Cliquez pour afficher le mot de passe:</button>
+        <div class="display"></div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../js/aes.js"></script>
+    <script>
+        let encrypted = "U2FsdGVkX1/jJvO92ydj9bP+Akmq7thk+5HaK6ccr+x2u17YltJ4vKVH16srMvzw";
+        function popUp(){
+            let indice = prompt("Entrez l'indice: ", "");
+            if (indice != null){
+                let tmp = CryptoJS.AES.decrypt(encrypted, indice.toString());
+                console.log("tmp = ", tmp.toString(CryptoJS.enc.Utf8));
+                if(tmp == ""){
+                    $(".display").html("L'indice est incorrect");
+                }
+                else{
+                    $(".display").html(tmp.toString(CryptoJS.enc.Utf8));
+                    tmp = "";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

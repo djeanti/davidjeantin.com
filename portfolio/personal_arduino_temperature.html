@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/fonts/fonts.css">
+        <link rel="stylesheet" href="../css/project-template.css">         
+        <link rel="stylesheet" href="../css/responsive-design/mediaqueries-project-template.css"> <!-- Load this in the last -->
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+        <title>David Jeantin</title>
+        <style>
+            .left-content.div-image{
+                width: 90%;
+            }
+
+            .left-content.div-image img{
+                width: inherit;
+                margin: auto;
+                display: block;
+            }
+
+            .left-content.div-image .text-img{
+                margin-top: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="main-section">
+            <div class="buttons">
+                <a href="personal_sfml_project.html" class="button-next">
+                    <ion-icon name="chevron-back"></ion-icon>
+                </a>
+                <a href="../portfolio.html" class="button-back">
+                    <ion-icon name="close"></ion-icon>
+                </a>
+            </div>
+            <div class="main-title-h1">Temperature sensor using Arduino UNO</div>
+            <div class="content">
+                <div class="left-content">
+                    <div class="left-content div-image">
+                        <img src="../images/PERSONAL_PROJECTS/tmp.jpg"/>
+                        <div class="text-img">Displaying the temperature on LCD</div>
+                    </div>
+                    <div class="text-left-content">
+                        Realization of a temperature sensor with the Arduino IDE. The sensor generates a different voltage depending on the temperature around him. This voltage is printed on an LCD screen after being converted in degree celsius.
+                        The arduino UNO card was used for this project. Reading of the datasheet of the sensor to understand how to implement the code.
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="right-content-inside">
+                        <div class="small-section">Description</div>
+                        <div class="status">
+                            <ion-icon name="checkmark"></ion-icon>
+                            <div class="h1">Project finished</div>
+                        </div>
+                        <div class="lenght">
+                            <ion-icon name="calendar"></ion-icon>
+                            <div class="h1"> Less than a day </div>
+                        </div>
+                        <div class="team">
+                            <ion-icon name="people"></ion-icon>
+                            <div class="h1">Team of 1 person</div>
+                        </div>
+
+                        <div class="small-section">Technologies</div>
+                        <div class="tech">
+                            <div class="tech-item">C</div>
+                            <div class="tech-item">Arduino IDE</div>
+                            <div class="tech-item">Sensors</div>
+                        </div>
+
+                        <div class="small-section">Share</div>
+                        <div class="share">
+                            <a id="fb_sharing_link" class="share-item"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a id="twitter_sharing_link" class="share-item"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a id="linkedin_sharing_link" class="share-item"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="text/javascript" src="../js/sharing.js"></script>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+         <!-- the order of loading script counts a lot -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/fonts.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/portfolio.css"> 
+        <link rel="stylesheet" href="css/footer.css"> 
+        <link rel="stylesheet" href="css/responsive-design/mediaqueries.css">
+        <link rel="stylesheet" href="css/responsive-design/portfolio-mediaqueries.css"> 
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <title>David Jeantin</title>
+    </head>
+<body>
+<nav>
+    <!-- LOGO -->
+    <div>
+        <!-- USING CHECKBOX HACK -->
+        <!-- <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+        <a href="" class="title-logo">
+            <img class="img_logo" alt="logo" src="images/logo.png"/>
+            <span class="font-SemiBold">David Jeantin</span>
+        </a>
+    </div>
+    <!-- NAVIGATION MENU for browser-->
+    <div class="nav-rel">
+        <div class="nav-abs">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <div class="dropdown-title about">
+                            <a href="index.html#about_hyperlink">About Me</a>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown_menu about dropdown_menu-animation">
+                            <div class="dropdown_menu-padding">
+                                <li><a href="index.html#about_hyperlink">Introduction</a></li>
+                                <li><a href="index.html#hobbies_hyperlink">Hobbies and interests</a></li>
+                                <li><a href="index.html#references_hyperlink">References</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#resume_hyperlink">Resume</a></li>
+                    <li class="dropdown">
+                        <div class="dropdown-title portfolio">
+                            <a href="">Portfolio</a>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown_menu projects dropdown_menu-animation">
+                            <div class="dropdown_menu-padding">
+                                <li class="dropdown_item"><a href="portfolio/fanuc.html">Cobotic project</a></li>
+                                <li class="dropdown_item"><a href="portfolio/vhdl_project.html">VHDL project</a></li>
+                                <li class="dropdown_item"><a href="portfolio/rfid_project.html">RFID tag detection</a></li>
+                                <li class="dropdown_item"><a href="portfolio/freertos_project.html">Remote temperature indicator</a></li>
+                                <li class="dropdown_item"><a href="portfolio/android_project.html">Android game</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="mailto:jeantin.david@gmail.com">Contact</a></li>
+                </ul>
+        </div>
+    </div>
+    <!-- NAVIGATION MENU for phones-->
+    <div class="nav-abs-phone">
+        <ul class="nav-links-phone">
+            <li class="item-phone-li">
+                <a href="index.html#mainImg_hyperlink">About Me</a>
+                <!-- DROPDOWN MENU -->
+                <ul>
+                    <li><a href="index.html#about_hyperlink">Introduction</a></li>
+                    <li><a href="index.html#hobbies_hyperlink">Hobbies and interests</a></li>
+                    <li><a href="index.html#references_hyperlink">References</a></li>
+                </ul>
+            </li>
+            <li class="item-phone-li"><a href="index.html#resume_hyperlink">Resume</a></li>
+            <li class="item-phone-li">
+                <a href="">Portfolio</a>
+                <!-- DROPDOWN MENU -->
+                <ul>
+                    <li><a href="portfolio/fanuc.html">Cobotic project</a></li>
+                    <li><a href="portfolio/vhdl_project.html">VHDL project</a></li>
+                    <li><a href="portfolio/rfid_project.html">RFID tag detection</a></li>
+                    <li><a href="portfolio/freertos_project.html">Remote temperature indicator</a></li>
+                    <li><a href="portfolio/android_project.html">Android game</a></li>
+                </ul>
+            </li>
+            <li class="item-phone-li"><a href="mailto:jeantin.david@gmail.com">Contact</a></li>
+        </ul>
+    </div>
+    <button for="checkbox_toggle" class="hamburger" onclick="hamburgerClickEvent()">&#9776;</button>
+</nav>
+
+<div class="portfolioTitle">
+    <div class="bar"></div>
+    <p id="h1">Portfolio</p>
+    <div class="bar"></div>
+</div>
+<div class="projects-portfolio">
+    <div class="item">
+        <div class="heading">UNIVERSITY OF PARIS-SACLAY</div>
+        <a href="portfolio/fanuc.html" class="main-subject">Cobotic project</a>
+        <p>
+            FANUC, the largest maker of industrial robots in the world, organizes each year a competition for robotics enthusiasts. I participated in this competition thanks to my school : Polytech Paris-Saclay. This year the subject lends itself around an assembly line motors (each weighing 5.1 Kg).
+            We had to conceive an entire work environment where the operator musn't have musculoskeletal disorders.
+            My team was composed of two other people aside from me and my role, as an IT manager, was to create a simulation of our solution using a software called RoboGuide.
+        </p>
+    </div>
+    <div class="item">
+        <div class="heading">UNIVERSITY OF PARIS-SACLAY</div>
+        <a href="portfolio/vhdl_project.html" class="main-subject">VHDL project</a>
+        <p>
+            Performance study and VHDL implementation of several architectures (combinatorial, pipelined sequential) on Quartus that all allow the calculation of the square root of a number.
+            Implementation in VHDL of several architectures (combinatorial, sequential and pipelines) on Modelsim-altera and synthesis of each architecture under Quartus to evaluate their performance. 
+        </p>
+    </div>
+    <div class="item">
+        <div class="heading">UNIVERSITY OF PARIS-SACLAY</div>
+        <a href="portfolio/rfid_project.html" class="main-subject">RFID project</a>
+        <p>
+            Development of an application on PC with an MFC graphical interface that allows to record and visualize in real time the detection status of RFID tags. The application was able to drive up to 8 RFID card readers. Development in C++ and under the Visual Studio 2008 IDE.
+        </p>
+    </div>
+
+    <div class="item">
+        <div class="heading">UNIVERSITY OF PARIS-SACLAY</div>
+        <a href="portfolio/freertos_project.html" class="main-subject">FreeRTOS project</a>
+        <p>
+            Development of a remote communicating temperature indicator.
+            The indicator, built around an ESP32, has an OLED display, an asynchronous serial link and an interface with a CAN bus. This CAN bus has been used to link with a temperature sensor module.
+            The temperature sensor module consists of an LM75B sensor located on an LPC1768 mbed expansion board.
+        </p>
+    </div>
+    <div class="item">
+        <div class="heading">UNIVERSITY OF PARIS-SACLAY</div>
+        <a href="portfolio/android_project.html" class="main-subject">Android project</a>
+        <p>
+            Creation of a video game in Android Studio using Java. Creation of UML diagrams during this process.
+        </p>
+    </div>
+    <div class="item">
+        <div class="heading">UNIVERSITY OF PARIS-SACLAY</div>
+        <a href="portfolio/accelerometer_cPlusPlus.html" class="main-subject">Accelerometer project</a>
+        <p>
+            Creation of an MFC application in C++ under Visual Studio 2008 that reads in real time the signals of an accelerometer.
+        </p>
+    </div>
+
+    <div class="item">
+        <div class="heading">UNIVERSITY OF PARIS-SACLAY</div>
+        <a href="portfolio/opencv_fresco_project.html" class="main-subject">Fresco reconstruction</a>
+        <p>
+            The goal of this project was to recreate a fresco from Michelangelo by using the OpenCV library and in modern C++ under Visual Studio 2017.
+        </p>
+    </div>
+    <div class="item">
+        <div class="heading">UNIVERSITY OF PARIS-SACLAY</div>
+        <a href="portfolio/zumo_project.html" class="main-subject">ZUMO project</a>
+        <p>
+            This project, done at Polytech Paris-Saclay, consist of using a robot: the Zumo 32U4 to fight in an arena with other robots (of the same type) while respecting certain criteria. We were in a team of 4 people.
+            We had, in fact, to program the robots pour so that they can follow a line leading ot the arena. By using event-driven programming we produced a specific behaviour of the robot in some situations and we tried to created the best strategy to win against the other robot in the arena since this was to final goal.
+            This project nurtured my skills as an engineer in electronics and informatics like, for instance, to read the datasheet of a composant.
+        </p>
+    </div>
+    <div class="item personal">
+        <div class="heading personal">PERSONAL PROJECT</div>
+        <a href="portfolio/personal_arduino_temperature.html" class="main-subject">Arduino UNO project</a>
+        <p>
+            Realization of a temperature sensor with the Arduino IDE. The sensor generates a different voltage depending on the temperature around him. This voltage is printed on an LCD screen after being converted in degree celsius.
+            The arduino UNO card was used for this project.
+        </p>
+    </div>
+
+    <div class="item personal">
+        <div class="heading personal">PERSONAL PROJECT</div>
+        <a href="index.html" class="main-subject">Website project</a>
+        <p>
+            Implementation from scratch of this website; Inspiration: <a target="_blank" href="https://lmpixels.com/wp/leven-wp/full-width-dark/portfolio/">link 1</a> and <a target="_blank" href="https://jacekjeznach.com/wall/">link 2</a>
+        </p>
+    </div>
+
+    <div class="item personal">
+        <div class="heading personal">PERSONAL PROJECT</div>
+        <a href="portfolio/personal_sfml_project.html" class="main-subject">Game dev in C++</a>
+        <p>
+            I wanted to created an interactive game that offer multiple choice to the player. I want to use the "buttefly effect" in my game (I was inspired by the game Until Dawn) to allow the player to have an almost complete freedom over the story.
+            I am using the SFML library and I am coding in C++. 
+        </p>
+    </div>
+
+    <div class="item personal">
+        <div class="heading personal">PERSONAL PROJECT</div>
+        <a href="portfolio/personal_python_calculator.html" class="main-subject">Calculator in Python</a>
+        <p>
+            This project consisted of creating a simple GUI calculator in Python using the tkinter package.
+            The calculator have the basics four operators (+,-,*,/). The application is able to reset the value on its screen (C button) and also have other operators : one for to change the sign (+/-) and also the modulo operator (%).
+        </p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-bar"></div>
+    <div class="links">
+        <div class="social">
+            <a href="https://linkedin.com/in/david-jeantin" class="media-div">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <div>Linkedin</div>
+            </a>
+        </div>
+        <div class="copyrights">
+            © <span id="footer-current-year">2023</span> All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+<script>
+    function screenresize() {
+        //change footer year in case:
+        document.getElementById("footer-current-year").innerHTML = new Date().getFullYear();
+    }
+
+    // Each time the screen width is changed:
+    window.addEventListener('resize', screenresize, true);
+</script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

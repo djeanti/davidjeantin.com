@@ -1,0 +1,164 @@
+/* MEDIA QUERIES */
+@media screen and (max-width: 1500px) {
+
+    .references .left-quote{
+        top: 200px;
+    }
+
+    .references .left-quote{
+        top: 160px;
+    }
+
+    .grid-main-hobbies .flip-card ion-icon{
+        font-size: 60px;
+    }
+    
+    .grid-main-hobbies .flip-card .hobbies-text{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .references .left-quote{
+        top: 180px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .references .left-quote{
+        top: 200px;
+    }
+}
+
+/* When the screen is at most 1096px and below*/
+@media screen and (max-width: 1096px) {
+    .main-body-section{
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    .references .left-quote{
+        top: 180px;
+    }
+}
+
+/* When the screen is at most 990px and below*/
+@media screen and (max-width: 990px) {
+    .nav-links {
+      display: none;
+    }
+
+    nav{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    nav .hamburger{
+        display: block;
+    }
+
+    .main-body-section{
+        margin-left:5%;
+        margin-right:5%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .references .left-quote{
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 793px) {
+    .references .left-quote{
+        top: 220px;
+    }
+
+    .flip-card .hobbies-text-back{
+        font-size: 10px;
+    }
+}
+
+/* When the screen is at most 770px and below*/
+@media screen and (max-width: 770px) {
+    .about-me{
+        display: block;
+    }
+
+    .about-me .main-image-div{
+        margin: auto;
+        margin-bottom: 15%;
+    }
+
+    .about-me .main-infos{
+        flex:1;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .main-body-section{
+        margin-left:5%;
+        margin-right:5%;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .references .left-quote{
+        top: 245px;
+    }
+
+    .grid-main-hobbies .flip-card .hobbies-text{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .references .left-quote{
+        top: 265px;
+    }
+
+
+    .grid-main-hobbies .flip-card ion-icon{
+        font-size: 40px;
+    }
+
+    .grid-main-hobbies .flip-card .hobbies-text{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+    .references .left-quote{
+        top: 280px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .references .left-quote{
+        top: 310px;
+    }
+
+    .paragraph-resume .detail-paragraph{
+        flex: 5;
+    }
+
+    .paragraph-resume .detail-paragraph h1{
+        font-size: 16px;
+    }
+
+    .paragraph-resume .detail-paragraph .inline-text-resume{
+        font-size: 14px;
+    }
+
+    .paragraph-resume .date-paragraph{
+        flex: 3;
+        font-size: 16px;
+    }
+
+    #hobbies_hyperlink{
+        display: none;
+    }
+}

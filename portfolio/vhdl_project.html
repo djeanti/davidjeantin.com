@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/fonts/fonts.css">
+        <link rel="stylesheet" href="../css/project-template.css"> 
+        <link rel="stylesheet" href="../css/responsive-design/mediaqueries-project-template.css"> <!-- Load this in the last -->
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+        <title>David Jeantin</title>
+    </head>
+<body>
+    <section class="main-section">
+        <div class="buttons">
+            <a href="rfid_project.html" class="button-next">
+                <ion-icon name="chevron-back"></ion-icon>
+            </a>
+            <a href="../portfolio.html" class="button-back">
+                <ion-icon name="close"></ion-icon>
+            </a>
+        </div>
+        <div class="main-title-h1">VHDL project</div>
+        <div class="content">
+            <div class="left-content">
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 8</div>
+                      <img src="../images/VHDL_PROJECT/Slide1.png" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 8</div>
+                      <img src="../images/VHDL_PROJECT/Slide2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="../images/VHDL_PROJECT/Slide3.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="../images/VHDL_PROJECT/Slide4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="../images/VHDL_PROJECT/Slide5.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="../images/VHDL_PROJECT/Slide6.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="../images/VHDL_PROJECT/Slide7.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="../images/VHDL_PROJECT/Slide8.png" style="width:100%">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                </div>
+
+                <div class="text-left-content">
+                    The objective of this project is to design on <span>FPGA</span> different architectures implementing three different algorithms for the calculation of the square root with different design constraints. These architectures are designed and tested using <span>VHDL</span>. 
+                    These circuits will calculate the square root of an unsigned input A with a size of 2n bits. 
+                    <br /><br />
+                    A total of three algorithms are used:
+                    <br /><br />
+                    - The first is based on Newton's method
+                    <br /><br />
+                    - The second and third are iterative algorithms that successively calculate each of the bits of the result starting with the MSB. 
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="right-content-inside">
+                    <div class="small-section">Description</div>
+                    <div class="status">
+                        <ion-icon name="checkmark"></ion-icon>
+                        <div class="h1">Project finished</div>
+                    </div>
+                    <div class="lenght">
+                        <ion-icon name="calendar"></ion-icon>
+                        <div class="h1">3-4 months (2021-2022)</div>
+                    </div>
+                    <div class="team">
+                        <ion-icon name="people"></ion-icon>
+                        <div class="h1">Team of 2 people</div>
+                    </div>
+
+                    <div class="small-section">Technologies</div>
+                    <div class="tech">
+                        <div class="tech-item">VHDL</div>
+                        <div class="tech-item">Modelsim-altera</div>
+                        <div class="tech-item">Quartus</div>
+                    </div>
+
+                    <div class="small-section">Share</div>
+                    <div class="share">
+                        <a id="fb_sharing_link" class="share-item"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a id="twitter_sharing_link" class="share-item"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a id="linkedin_sharing_link" class="share-item"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../js/slideAnimation.js"></script>
+    <script type="text/javascript" src="../js/sharing.js"></script>
+</body>
+</html>

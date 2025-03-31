@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/fonts/fonts.css">
+        <link rel="stylesheet" href="../css/project-template.css">         
+        <title>David Jeantin</title>
+        <style>
+            .left-content.div-images{
+                width: 100%;
+                display: flex;
+            }
+
+            .left-content.div-images img{
+                max-width: 100%;
+            }
+
+            .left-content.div-images .text-img{
+                padding-top: 15px;
+                text-align: center;
+            }
+
+            .media-left-content{
+                width: 100%;
+            }
+
+            .media-left-content iframe{
+                width: inherit;
+            }
+        </style>
+        <link rel="stylesheet" href="../css/responsive-design/mediaqueries-project-template.css"> <!-- Load this in the last -->
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+    </head>
+<body>
+    <section class="main-section">
+        <div class="buttons">
+            <a href="accelerometer_cPlusPlus.html" class="button-next">
+                <ion-icon name="chevron-back"></ion-icon>
+            </a>
+            <a href="../portfolio.html" class="button-back">
+                <ion-icon name="close"></ion-icon>
+            </a>
+        </div>
+        <div class="main-title-h1">Android project</div>
+        <div class="content">
+            <div class="left-content">
+                <div class="left-content div-images"> <!-- first two images -->
+                    <div>
+                        <img src="../images/ANDROID_PROJECT/SK_apk.png"/>
+                        <div class="text-img">Overview of the game</div>
+                    </div>
+                    <div>
+                        <img src="../images/ANDROID_PROJECT/SK_menu_jeu.png"/>
+                        <div class="text-img">Main menu of the game</div>
+                    </div>
+                </div>
+                <div class="text-left-content">
+                    Creation of a video game in <span>Android Studio</span> using <span>Java</span>. Creation of <span>UML</span> diagrams during this process.
+                    This game was coded in Java and features a hero who must save the princess by evading the bullets until the last stage. A message saying "You Win" appears on screen if the hero succeeds, in the latter, we go back to the main menu after showing a message saying "Game Over" on screen.
+                    <a class="github-link" href="https://github.com/djeanti/Space-Kong">GitHub link</a>.
+                    <br /><br />
+                    <a class="github-link" href="../Space-Kong.zip" download>Download</a> the game to play it yourself!
+                    <br /><br />
+                    What it looks like:
+                </div>
+                <div class="media-left-content">
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/7hJxZAaFHrM" title="YouTube video player" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="right-content-inside">
+                    <div class="small-section">Description</div>
+                    <div class="status">
+                        <ion-icon name="checkmark"></ion-icon>
+                        <div class="h1">Project finished</div>
+                    </div>
+                    <div class="lenght">
+                        <ion-icon name="calendar"></ion-icon>
+                        <div class="h1">5 months (2021)</div>
+                    </div>
+                    <div class="team">
+                        <ion-icon name="people"></ion-icon>
+                        <div class="h1">Team of 2 people</div>
+                    </div>
+                    <div class="small-section">Technologies</div>
+                    <div class="tech">
+                        <div class="tech-item">Java</div>
+                        <div class="tech-item">Android Studio</div>
+                        <div class="tech-item">StarUML</div>
+                        <div class="tech-item">MacOS</div>
+                    </div>
+                    <div class="small-section">Share</div>
+                    <div class="share">
+                        <a id="fb_sharing_link" class="share-item"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a id="twitter_sharing_link" class="share-item"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a id="linkedin_sharing_link" class="share-item"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="../js/sharing.js"></script>
+</body>
+</html>

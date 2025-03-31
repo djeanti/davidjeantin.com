@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/fonts.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/index.css"> <!-- Load this in the last -->
+        <link rel="stylesheet" href="css/footer.css"> <!-- Load this in the last -->
+        <link rel="stylesheet" href="css/responsive-design/mediaqueries.css"> <!-- Load this in the last -->
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <title>David Jeantin</title>
+        <style> /* On Hostinger, has to be here and not inside css file or it will not work well */
+            .main-body-section .titleSection{
+                text-align: center;
+                font-family: Open-Sans-Bold;
+                font-size: 40px;
+                color: rgb(240, 239, 239);
+                width: fit-content;
+                margin:auto;
+                display: block;
+                margin-top: 100px;
+            }
+
+            .main-body-section .underline-text{
+                border: 2px solid rgb(240, 239, 239);
+                margin-top: 15px;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+
+            .driver-license{
+                margin-top: 10px; margin-bottom: 30px; font-family: Open-Sans-Bold;
+            }
+        </style>
+    </head>
+<body onload="main()">
+<nav>
+    <!-- LOGO -->
+    <div>
+        <!-- USING CHECKBOX HACK -->
+        <!-- <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+        <a href="" class="title-logo">
+            <img class="img_logo" alt="logo" src="images/logo.png"/>
+            <span class="font-SemiBold">David Jeantin</span>
+        </a>
+    </div>
+    <!-- NAVIGATION MENU for browser-->
+    <div class="nav-rel">
+        <div class="nav-abs">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <div class="dropdown-title about">
+                            <a href="#about_hyperlink">About Me</a>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown_menu about dropdown_menu-animation">
+                            <div class="dropdown_menu-padding">
+                                <li><a href="#about_hyperlink">Introduction</a></li>
+                                <li><a href="#hobbies_hyperlink">Hobbies and interests</a></li>
+                                <li><a href="#references_hyperlink">References</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#resume_hyperlink">Resume</a></li>
+                    <li class="dropdown">
+                        <div class="dropdown-title portfolio">
+                            <a href="portfolio.html">Portfolio</a>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown_menu projects dropdown_menu-animation">
+                            <div class="dropdown_menu-padding">
+                                <li class="dropdown_item"><a href="portfolio/fanuc.html">Cobotic project</a></li>
+                                <li class="dropdown_item"><a href="portfolio/vhdl_project.html">VHDL project</a></li>
+                                <li class="dropdown_item"><a href="portfolio/rfid_project.html">RFID tag detection</a></li>
+                                <li class="dropdown_item"><a href="portfolio/freertos_project.html">Remote temperature indicator</a></li>
+                                <li class="dropdown_item"><a href="portfolio/android_project.html">Android game</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a>Contact</a></li> <!-- removing mailto for security reasons, can't have my mail exposed -->
+                </ul>
+        </div>
+    </div>
+    <!-- NAVIGATION MENU for phones-->
+    <div class="nav-abs-phone">
+        <ul class="nav-links-phone">
+            <li class="item-phone-li">
+                <a href="#mainImg_hyperlink">About Me</a>
+                <!-- DROPDOWN MENU -->
+                <ul>
+                    <li><a href="#about_hyperlink">Introduction</a></li>
+                    <li><a href="#hobbies_hyperlink">Hobbies and interests</a></li>
+                    <li><a href="#references_hyperlink">References</a></li>
+                </ul>
+            </li>
+            <li class="item-phone-li"><a href="#resume_hyperlink">Resume</a></li>
+            <li class="item-phone-li">
+                <a href="portfolio.html">Portfolio</a>
+                <!-- DROPDOWN MENU -->
+                <ul>
+                    <li><a href="portfolio/fanuc.html">Cobotic project</a></li>
+                    <li><a href="portfolio/vhdl_project.html">VHDL project</a></li>
+                    <li><a href="portfolio/rfid_project.html">RFID tag detection</a></li>
+                    <li><a href="portfolio/freertos_project.html">Remote temperature indicator</a></li>
+                    <li><a href="portfolio/android_project.html">Android game</a></li>
+                </ul>
+            </li>
+            <li class="item-phone-li"><a href="mailto:jeantin.david@gmail.com">Contact</a></li>
+        </ul>
+    </div>
+    <button for="checkbox_toggle" class="hamburger" onclick="hamburgerClickEvent()">&#9776;</button>
+</nav>
+<section class="main-body-section">
+    <div id="about_hyperlink" class="about-me">
+        <div class="main-image-div">
+        </div>
+        <div class="main-infos">
+            <h3><a></a>Electronic engineer</h3>
+            <h1>David Jeantin</h1>
+            <div class="text-div">
+                I am an electronic engineer who graduated from the University of Paris-Saclay in November 2022. 
+                I am passionnate about embedded systems and decided to create my portfolio to present my professionnal career.
+            </div>
+            <div class="driver-license">Driver license - Category B</div>
+            <div class="resume_and_contact">
+                <a target="_blank" href="CV_JEANTIN_DAVID.pdf">Download CV</a>
+                <a href="mailto:jeantin.david@gmail.com">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="hobbies_hyperlink">
+        <div class="titleSection">
+            <div>
+                Hobbies & Interests
+                <div class="underline-text"></div>
+            </div>
+        </div>
+        <div class="grid-main-hobbies">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <ion-icon name="game-controller"></ion-icon>
+                        <div class="hobbies-text">Game creation</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="hobbies-text-back">Tool used:<br />Open-source libraries: SFML, SDL<br /> Game engines: Unreal Engine, Unity 3D</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <ion-icon name="pencil"></ion-icon>
+                        <div class="hobbies-text">Drawing</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="hobbies-text-back">Numerical drawing on Ipad</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <ion-icon name="map"></ion-icon>
+                        <div class="hobbies-text">Fantasy Map<br/>Creation</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="hobbies-text-back">Usage of Gimp to create fantasy maps. <a target="_blank" href="https://worldanvil.com/w/certia-gros1919/map/4312ab9f-1cff-4e85-9f6a-145647d9672c"> Click to see example</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <ion-icon name="barbell"></ion-icon>
+                        <div class="hobbies-text">Sports</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="hobbies-text-back">Natation, Karate, and Running</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <ion-icon name="book"></ion-icon>
+                        <div class="hobbies-text">Writing</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="hobbies-text-back">I am currently writing a scenario based on a fantasy map I created. <a target="_blank" href="https://www.worldanvil.com/w/certia-gros1919">Link to story</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <ion-icon name="airplane"></ion-icon>
+                        <div class="hobbies-text">Travelling</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="hobbies-text-back">In Europe and North America. I travelled 4 years in Canada and studied at the school of Stanislas in Montreal.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume_hyperlink" class="resume">
+        <div class="titleSection">
+            <div>
+                Resume
+                <div class="underline-text"></div>
+            </div>
+        </div>
+        <div class="education">
+            <h1>Education</h1>
+            <div class="blue-bar">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="paragraph-resume">
+                <div class="detail-paragraph"> <!-- Description -->
+                    <h1>Engineering diploma in Electronics, University of Paris-Saclay, Paris, France</h1>
+                    <ul>
+                        <li><span class="inline-text-resume">Development on microcontrollers in C; on FPGAs in VHDL</span></li>
+                        <li><span class="inline-text-resume">Training in image processing and artificial intelligence (machine learning)</span></li>
+                        <li><span class="inline-text-resume">Advanced training in industrial computer science in C++ and development of HMI.</span></li>
+                    </ul>
+                </div>
+                <div class="date-paragraph"> <!-- Date -->
+                    2019 – Nov. 2022
+                </div>
+            </div>
+            <div class="paragraph-resume">
+                <div class="detail-paragraph"> <!-- Description -->
+                    <h1>Bachelor’s degree, University of Grenoble-Alpes (UGA), Grenoble, France</h1>
+                    <ul>
+                        <li><span class="inline-text-resume">Training in computer science and applied mathematics with UGA</span></li>
+                        <li><span class="inline-text-resume">Lessons on data-structures, automatons and algorithms</span></li>
+                    </ul>
+                </div>
+                <div class="date-paragraph"> <!-- Date -->
+                    2017 – 2019
+                </div>
+            </div>
+        </div>
+
+        <div class="work-exp">
+            <h1>Internships</h1>
+            <div class="blue-bar">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="paragraph-resume">
+                <div class="detail-paragraph"> <!-- Description -->
+                    <h1>End of study internship, EDF Lab R&D, Palaiseau, France</h1>
+                    <ul>
+                        <li><span class="inline-text-resume">Created the first working implementation in Python of IEC 63110: a communication protocol between multiple recharging infrastructures and their supervision server.</span></li>
+                        <li><span class="inline-text-resume">Implemented the network’s architecture using XMPP and open-source libraries. Designed a GUI for the clients of the network using Tkinter. Published the documented project using GitLab.</span></li>
+                    </ul>
+                </div>
+                <div class="date-paragraph"> <!-- Date -->
+                    Feb. 2022 – Aug. 2022
+                </div>
+            </div>
+            <div class="paragraph-resume">
+                <div class="detail-paragraph"> <!-- Description -->
+                    <h1>Technical internship, University of Ulster, Belfast, Northern Ireland</h1>
+                    <ul>
+                        <li><span class="inline-text-resume">Integration of a virtual assistant, created for the first time with the Metahuman framework, inside a web browser.</span></li>
+                        <li><span class="inline-text-resume">Creation of a 3D virtual assistant using Unreal Engine. Integration of the game in a browser using Pixel Streaming technology. Development of the user interface using HTML, JavaScript and CSS. Development of the chatbot in the backend using AWS and Python scripts. Publication of the documented project using Gitlab.</span></li>
+                    </ul>
+                </div>
+                <div class="date-paragraph"> <!-- Date -->
+                    May 2021 – Aug. 2021
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="blue-bar">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="paragraph-resume">
+                <div class="detail-paragraph"> <!-- Description -->
+                    <h1>Frameworks/OS</h1>
+                    <ul>
+                        <li><span class="inline-text-resume">Embedded development in VHDL on FPGA Cyclone IV using Modelsim-altera and Quartus.</span></li>
+                        <li><span class="inline-text-resume">Embedded development in C on microcontrollers: ATMega 32U4, ARM-Cortex-M, ESP32, MBED board, and LMC1768.</span></li>
+                        <li><span class="inline-text-resume">C++ development in Visual Studio (HMI and MFC development) and Qt (GUI development).</span></li>
+                        <li><span class="inline-text-resume">Electronic board routing with Altium Designer.</span></li>
+                        <li><span class="inline-text-resume">Representation of the frequency behavior of transfer functions using Simulink (MATLAB).</span></li>
+                        <li><span class="inline-text-resume">Development of an android game in Java using Android Studio.</span></li>
+                        <li><span class="inline-text-resume">Embedded development of a communicating temperature indicator using FreeRTOS.</span></li>
+                        <li><span class="inline-text-resume">MacOS, Windows, Linux/Ubuntu.</span></li>
+                        <li><span class="inline-text-resume">Web development in HTML, CSS, and JavaScript (Creation of my own website: https://davidjeantin.com).</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paragraph-resume">
+                <div class="detail-paragraph"> <!-- Description -->
+                    <h1>Communication standards/protocols</h1>
+                    <ul>
+                        <li><span class="inline-text-resume">Knowledge of OCPP, IEC63110, 15118-20, XMPP, TCP/IP, TLS, I2C, UART, and SPI.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paragraph-resume">
+                <div class="detail-paragraph"> <!-- Description -->
+                    <h1>Certifications</h1>
+                    <ul>
+                        <li><span class="inline-text-resume">TOEIC on May 2021 (905/990).</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="references_hyperlink" class="references">
+        <div class="titleSection">
+            <div>
+                Reference(s)
+                <div class="underline-text"></div>
+            </div>
+        </div>
+        <div class="ref-com">
+            <img class="ref_image" src="images/ref_1.jpg"/>
+            <img class="left-quote" src="images/quote-left-icon.png"/>
+            <div class="ref-com content">
+                <p>
+                    David was a pleasure to work with during his placement at Ulster University. A highly motivated individual and self starter, industrious with excellent technical skills, capable of producing work of a high standard to tight deadlines with great teamworking and project management skills. During his project he worked on AWS, Unreal Engine and web application development. I would highly recommend David as a prospective employee. Please feel free to contact me if required.
+                </p>
+                <h3>Michael Callaghan</h3>
+                <h4>Reader at University of Ulster (UK)</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-bar"></div>
+    <div class="links">
+        <div class="social">
+            <a href="https://linkedin.com/in/david-jeantin" class="media-div">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <div>Linkedin</div>
+            </a>
+        </div>
+        <div class="copyrights">
+            © <span id="footer-current-year">2023</span> All rights reserved.
+        </div>
+    </div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

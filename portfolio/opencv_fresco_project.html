@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/fonts/fonts.css">
+        <link rel="stylesheet" href="../css/project-template.css">         
+        <link rel="stylesheet" href="../css/responsive-design/mediaqueries-project-template.css"> <!-- Load this in the last -->
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+        <title>David Jeantin</title>
+        <style>
+            .numbertext{
+                color: white;
+            }
+        </style>
+    </head>
+<body>
+    <section class="main-section">
+        <div class="buttons">
+            <a href="zumo_project.html" class="button-next">
+                <ion-icon name="chevron-back"></ion-icon>
+            </a>
+            <a href="../portfolio.html" class="button-back">
+                <ion-icon name="close"></ion-icon>
+            </a>
+        </div>
+        <div class="main-title-h1">Fresco reconstruction with OpenCV</div>
+        <div class="content">
+            <div class="left-content">
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 11</div>
+                      <img src="../images/FRESCO_PROJECT/Slide1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide2.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide3.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide5.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide6.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide7.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide8.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">9 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide9.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">10 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide10.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">11 / 11</div>
+                        <img src="../images/FRESCO_PROJECT/Slide11.png" style="width:100%">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                </div>
+                <div class="text-left-content">
+                    Implementation of a <span>template matching</span> program in <span>C++</span> using <span>OpenCV</span> to rebuilt a fresco. 
+                    The approach used for template matching was area-based.
+                    <br /><br />
+                    The project was divided in three parts:
+                    <br /><br />
+                    - Creation of the "likelihood map" for a fragment in order to estimate the general location of the fragment inside the original fresco. A "backprojection" of the fresco is created specifically for each fragment. The white areas have a higher chance of corresponding to the fragment location while its the opposite for the darker areas.
+                    <br /><br />
+                    - Usage of keypoints in order to get the exact location based on the backprojection previously calculated.
+                    <br /><br />
+                    - Once we know the fine position for each fragment we can put them back inside a new empty fresco. The only parameter left is to know the correct rotation of each fragment, for that we use a projection matrix.
+                    <br /><br />
+                    All the functionnalities mentionned above where implemented thanks to OpenCV library (For the backprojection, and the BRISK algorithm for instance).
+                    <br /><br />The project on <a class="github-link" target="_blank" href="https://github.com/djeanti/Fresco-reconstruction---Image-processing">GitHub</a>.
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="right-content-inside">
+                    <div class="small-section">Description</div>
+                    <div class="status">
+                        <ion-icon name="checkmark"></ion-icon>
+                        <div class="h1">Project finished</div>
+                    </div>
+                    <div class="lenght">
+                        <ion-icon name="calendar"></ion-icon>
+                        <div class="h1">6 months (2021 - 2022)</div>
+                    </div>
+                    <div class="team">
+                        <ion-icon name="people"></ion-icon>
+                        <div class="h1">Team of 4 people</div>
+                    </div>
+
+                    <div class="small-section">Technologies</div>
+                    <div class="tech">
+                        <div class="tech-item">OpenCV library (for image processing)</div>
+                        <div class="tech-item">C++</div>
+                        <div class="tech-item">Visual Studio 2017</div>
+                        <div class="tech-item">Template matching</div>
+                    </div>
+
+                    <div class="small-section">Share</div>
+                    <div class="share">
+                        <a id="fb_sharing_link" class="share-item"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a id="twitter_sharing_link" class="share-item"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a id="linkedin_sharing_link" class="share-item"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../js/slideAnimation.js"></script>
+    <script type="text/javascript" src="../js/sharing.js"></script>
+</body>
+</html>
